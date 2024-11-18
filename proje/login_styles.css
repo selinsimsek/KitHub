@@ -1,0 +1,85 @@
+/* Genel stil ayarları */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9; /* Arka plan rengini değiştirdik */
+    background-image: none; /* Eğer bir arka plan görseli varsa, bunu kaldırıyoruz */
+    background-repeat: no-repeat; /* Arka planın tekrarlanmasını engelliyoruz */
+    background-position: center center; /* Arka planı ortalıyoruz */
+}
+
+/* Login container stilleri */
+.login-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #5c67f2;
+    color: white;
+    border: none;
+    padding: 0.7rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4b56d2;
+}
+
+a {
+    color: #5c67f2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Logoyu stillendirme */
+.logo-container {
+    text-align: center;
+    margin-bottom: 1rem; /* Logonun formdan uzaklığını ayarlamak için */
+}
+
+.logo {
+    width: 120px; /* Yeni genişlik */
+    height: 120px; /* Yeni yükseklik */
+    border-radius: 50%; /* Yuvarlak logo */
+    object-fit: cover; /* Orantılı şekilde yerleştirilmesini sağlar */
+    display: inline-block;
+    margin-bottom: 10px; /* Başlıkla olan aralık */
+}
