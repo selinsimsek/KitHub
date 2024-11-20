@@ -15,7 +15,7 @@
         </div>
 
         <!-- Kaydol formu -->
-        <form action="/signup" method="POST">
+        <form action="signUp_process.php" method="POST">
             <label for="first-name">Ad:</label>
             <input type="text" id="first-name" name="first-name" required> 
 

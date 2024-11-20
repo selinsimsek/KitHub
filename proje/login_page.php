@@ -14,9 +14,9 @@
         </div>
         <h1>KitHub</h1>
     
-        <form action="/login" method="POST">
-            <label for="email">Kullanıcı Adı:</label>
-            <input type="email" id="email" name="email" required>
+        <form action="login_process.php" method="POST">
+            <label for="username">Kullanıcı Adı:</label>
+            <input type="text" id="username" name="username" required>
             
             <label for="password">Şifre:</label>
             <input type="password" id="password" name="password" required>
