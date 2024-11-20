@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Sidebar'ı ekranın tamamına yay */
+    width: 250px; /* Genişlik */
+    background-color: #f4f4f4;
+    padding: 20px;
+    justify-content: space-between; /* İçerik ile butonu ayırır */
+}
+
+.profile {
+    flex-grow: 1; /* Profil kısmı kalan alanı doldurur */
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.logout {
+    background-color: #ff4d4d; /* Butonun arka plan rengi kırmızı */
+    color: white;              /* Yazı rengi beyaz */
+    border: none;              /* Sınır yok */
+    padding: 12px 25px;        /* İçerideki yazıya göre padding */
+    cursor: pointer;          /* Fareyi üzerine getirdiğinde el simgesi */
+    font-size: 16px;           /* Yazı boyutu */
+    border-radius: 5px;        /* Köşeleri yuvarlat */
+    width: 100%;               /* Butonun genişliği %100 */
+    box-sizing: border-box;    /* Genişliği tam kapsasın diye box-sizing ekledik */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Geçiş efektleri */
+}
+
+.logout:hover {
+    background-color: #e60000; /* Hover (fareyle üzerine gelindiğinde) kırmızı tonu daha koyu */
+    transform: scale(1.05);     /* Hoverda butonu biraz büyüt */
+}
+
+.logout:focus {
+    outline: none; /* Odaklandığında mavi kenarlık yerine daha temiz bir görünüm */
+}
+
+.logout:active {
+    background-color: #cc0000; /* Butona tıklandığında daha koyu kırmızı */
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.add-book {
+    background-color: #007bff;
+    color: white;
+    font-size: 20px;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.add-book:hover {
+    background-color: #0056b3;
+}
+
+.search-bar {
+    flex: 1;
+    margin-left: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.books {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Daha geniş kitap kutuları */
+    gap: 30px; /* Kutular arasındaki boşluk artırıldı */
+}
+/* Kitap kutusu */
+/* Kitap kutusu */
+.book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px; /* Kitap kutusunun genişliğini ayarla */
+    height: 350px; /* Kitap kutusunun yüksekliğini ayarla */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Taşan içerik gizlensin */
+}
+
+/* Resim */
+.thumbnail {
+    width: 100%; /* Resmi tam genişlikte yap */
+    height: 200px; /* Resmin yüksekliğini belirle */
+    overflow: hidden; /* Taşan kısmı gizle */
+    border-radius: 5px;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Resmin orantısını koruyarak kutuya sığdır */
+    object-position: center; /* Resmin merkezlenmesini sağlar */
+}
+
+/* Değerlendirme */
+.rating {
+    font-size: 14px;
+    color: #888;
+    margin-top: 10px;
+}
+
+
+
