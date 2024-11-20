@@ -36,7 +36,9 @@
 
   <div class="main">
     <header>
+      <a href="add_book.php">
       <button class="add-book">+</button>
+      </a>
       <input type="text" placeholder="Ara..." class="search-bar">
     </header>
 
