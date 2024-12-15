@@ -1,0 +1,195 @@
+/* Genel Ayarlar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  h3 {
+    color: #555;
+  }
+  
+  /* Profil Container */
+  .profile-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Profil Bilgileri */
+  .profile {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .profile-info {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .profile-info .profile-picture {
+    margin-right: 20px;
+  }
+  
+  .profile-info .profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile-info .user-details {
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Profil Düzenle Butonu */
+  .edit-profile-btn {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-profile-btn:hover {
+    background-color: #4cae4c;
+  }
+  
+  /* Profil Altı Bölümü (Yorumlar ve Okuma Listesi) */
+  .profile-bottom {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  
+  .comments-section, .reading-list-section {
+    width: 48%;
+  }
+  
+  .comments-section h2, .reading-list-section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Yorumlar */
+  .comment {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .comment h3 {
+    margin-bottom: 10px;
+  }
+  
+  .comment p {
+    color: #555;
+    font-size: 14px;
+  }
+  
+  .comment small {
+    color: #777;
+    font-size: 12px;
+  }
+  
+  /* Okuma Listesi */
+  .reading-list-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .book-item {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book-img {
+    width: 80px;
+    height: 120px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .book-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .book-info h3 {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .book-info p {
+    color: #555;
+    font-size: 14px;
+  }
+  
+  /* Geri Dön Butonu */
+  .go-back-btn {
+    display: block;
+    width: 200px;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .go-back-btn:hover {
+    background-color: #c9302c;
+  }
+  /* Yazının altındaki çizgiyi kaldırma */
+.edit-profile-btn, .edit-profile-btn:focus, .edit-profile-btn:active {
+    text-decoration: none; /* Alt çizgiyi kaldırır */
+  }
+ .add-list-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #28a745;
+      color: white;
+      font-size: 24px;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .add-list-btn:hover {
+      background-color: #218838;
+    }

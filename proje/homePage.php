@@ -23,7 +23,7 @@
     <div class="profile">
       <div class="profile-picture"></div>
       <ul class="menu">
-        <li>Profil</li>
+        <li><a href="profile_page.php">Profil</a></li>
         <li>Listeler</li>
         <li>Takipçiler</li>
         <li>Takip Edilen</li>

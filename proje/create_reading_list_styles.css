@@ -1,0 +1,126 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.create-list-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  color: #555;
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+select:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #fff;
+}
+
+select[multiple] {
+  height: 200px;
+  padding: 10px;
+}
+
+.short-input {
+  width: 50%; /* Liste adı girişi daha kısa olacak */
+}
+
+.save-list-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #28a745;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-list-btn:hover {
+  background-color: #218838;
+}
+
+.save-list-btn:active {
+  background-color: #1e7e34;
+}
+
+.back-to-profile-btn {
+  display: inline-block;
+  margin-top: 25px;
+  text-align: center;
+  text-decoration: none;
+  color: #007bff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.back-to-profile-btn:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+small {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+@media (max-width: 600px) {
+  .create-list-container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .save-list-btn {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .back-to-profile-btn {
+    font-size: 0.9rem;
+  }
+
+  .short-input {
+    width: 80%; /* Mobilde liste adı biraz daha uzun görünsün */
+  }
+}

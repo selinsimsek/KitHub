@@ -36,6 +36,9 @@ body {
     cursor: pointer;
 }
 
+.menu li a{
+    text-decoration: none;
+}
 .logout {
     background-color: #ff4d4d; /* Butonun arka plan rengi kırmızı */
     color: white;              /* Yazı rengi beyaz */
@@ -105,6 +108,8 @@ header {
 }
 /* Kitap kutusu */
 /* Kitap kutusu */
+/* Kitap kutusu */
+/* Kitap kutusu */
 .book {
     display: flex;
     flex-direction: column;
@@ -117,6 +122,7 @@ header {
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden; /* Taşan içerik gizlensin */
+    transition: transform 0.3s ease; /* Kitap kutusunun büyüme efekti */
 }
 
 /* Resim */
@@ -126,6 +132,36 @@ header {
     overflow: hidden; /* Taşan kısmı gizle */
     border-radius: 5px;
 }
+
+/* Resim büyütme efekti */
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Resmin orantısını koruyarak kutuya sığdır */
+    object-position: center; /* Resmin merkezlenmesini sağlar */
+    transition: transform 0.3s ease; /* Resmin büyüme efektini ekle */
+    
+}
+
+/* Resmin üzerine gelindiğinde büyüme */
+.book:hover .thumbnail img {
+    transform: scale(1.1); /* Resmi büyütme */
+}
+
+.book:hover {
+    transform: scale(1.05); /* Kitap kutusunu biraz büyütme */
+}
+
+
+/* Resim büyütme efekti */
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Resmin orantısını koruyarak kutuya sığdır */
+    object-position: center; /* Resmin merkezlenmesini sağlar */
+    transition: transform 0.3s ease; /* Resmin büyüme efekti */
+}
+
 
 .thumbnail img {
     width: 100%;
@@ -140,6 +176,7 @@ header {
     color: #888;
     margin-top: 10px;
 }
+
 
 
 
