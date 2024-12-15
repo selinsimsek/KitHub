@@ -122,7 +122,12 @@ header {
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden; /* Taşan içerik gizlensin */
-    transition: transform 0.3s ease; /* Kitap kutusunun büyüme efekti */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Büyüme ve gölge geçişi */
+}
+
+.book:hover {
+    transform: scale(1.05); /* Kitap kutusunu büyüt */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Hover olduğunda daha belirgin gölge */
 }
 
 /* Resim */

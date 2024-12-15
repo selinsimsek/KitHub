@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (isset($_FILES['profile_picture']) && $_FILES['profile_picture']['error'] == 0) {
         // Fotoğraf yüklendiğinde, yeni bir dosya adı oluşturuluyor ve dosya kaydediliyor
-        $profile_picture = 'uploads/' . basename($_FILES['profile_picture']['name']);
+        $profile_picture = 'images/' . basename($_FILES['profile_picture']['name']);
         move_uploaded_file($_FILES['profile_picture']['tmp_name'], $profile_picture); // Dosyayı kaydediyoruz
     }
     

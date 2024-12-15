@@ -10,18 +10,16 @@
   <?php
     include 'veritabani/db_config.php'; // Veritabanı bağlantısı
     include 'veritabani/selectQuery.php'; // Select * From
-    session_start();
-    if (!isset($_SESSION['islogin']) || $_SESSION['islogin'] !== 1) {    
-        echo "Giriş yapmadınız!";
-        header("Location: login_page.php");  // Giriş yapmamışsa login sayfasına yönlendir
-        exit;
-    }
-    $user_id = $_SESSION['user_id']; // Kullanıcı ID'sini alıyoruz
+   
+   
+    include 'profile_users.php';
   ?>
 
   <div class="sidebar">
     <div class="profile">
-      <div class="profile-picture"></div>
+      <div class="profile-picture">
+      <img src="<?php echo htmlspecialchars($user['profile_picture']); ?>" alt="Profil Resmi" class="profile-picture">
+      </div>
       <ul class="menu">
         <li><a href="profile_page.php">Profil</a></li>
         <li>Listeler</li>
